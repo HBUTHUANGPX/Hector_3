@@ -1,0 +1,45 @@
+<launch>
+    <param name="ConvexMPCLocomotion/run/p_rel_max" value="0.4" type="double" />
+    <param name="ConvexMPCLocomotion/run/Kp" value="300.0" type="double" />
+    <param name="ConvexMPCLocomotion/run/Kd" value="10.0" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_roll" value="100" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_pitch" value="100" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_yaw" value="150" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_x" value="200" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_y" value="200" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_z" value="300" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_droll" value="1" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_dpitch" value="1" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_dyaw" value="1" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_dx" value="1" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_dy" value="10" type="double" />
+    <param name="ConvexMPCLocomotion/run/Q_dz" value="10" type="double" />
+    <param name="ConvexMPCLocomotion/run/swing_hight" value="0.15" type="double" />
+    <param name="ConvexMPCLocomotion/run/first_hight" value="0.05" type="double" />
+    
+    <param name="LegController/updateCommand/kphip0" value="5.0" type="double" />
+    <param name="LegController/updateCommand/kdhip0" value="0.30" type="double" />
+
+    <param name="LegController/updateCommand/kphip1" value="10.0" type="double" />
+    <param name="LegController/updateCommand/kdhip1" value="0.80" type="double" />
+
+    <param name="LegController/updateCommand/kphip2" value="10.0" type="double" />
+    <param name="LegController/updateCommand/kdhip2" value="0.8" type="double" />
+
+    <param name="ConvexMPCLocomotion/run/kptoe" value="10.00" type="double" />
+    <param name="ConvexMPCLocomotion/run/kdtoe" value="0.0" type="double" />
+
+
+    <param name="Biped/hip_offset" value="0.0" type="double" />
+
+    <param name="SolverMPC/solve_mpc/lt" value="0.1" type="double" />
+    <param name="SolverMPC/solve_mpc/lh" value="0.04" type="double" />
+    <param name="SolverMPC/solve_mpc/mu" value="0.8" type="double" />
+
+    <param name="Constraints/CalculateConstarintMatrix/mu" value="0.0" type="double" />
+    <param name="Constraints/CalculateConstarintMatrix/lt" value="0.05" type="double" />
+    <param name="Constraints/CalculateConstarintMatrix/lh" value="0.05" type="double" />
+
+    <node pkg="pai_12_control" name="hector_ctrl" type="hector_ctrl" output="screen" />
+
+</launch>
