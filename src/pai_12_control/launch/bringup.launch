@@ -35,11 +35,7 @@
     <param name="SolverMPC/solve_mpc/lt" value="0.1" type="double" />
     <param name="SolverMPC/solve_mpc/lh" value="0.04" type="double" />
     <param name="SolverMPC/solve_mpc/mu" value="0.8" type="double" />
-
-    <param name="Constraints/CalculateConstarintMatrix/mu" value="0.0" type="double" />
-    <param name="Constraints/CalculateConstarintMatrix/lt" value="0.05" type="double" />
-    <param name="Constraints/CalculateConstarintMatrix/lh" value="0.05" type="double" />
-
+    
     <node pkg="pai_12_control" name="hector_ctrl" type="hector_ctrl" output="screen" />
 
 </launch>
